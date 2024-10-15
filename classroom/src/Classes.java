@@ -7,12 +7,13 @@ public class Classes {
 
     //初始化班级中的小组以及所有学生
     public Classes(String name, Group[] groups, Student[] allStudents) {
+
         this.name = name;
         this.groups = groups;
         this.allStudents = allStudents;
     }
 
-    //从小组中随机抽取成员
+    //随机抽取小组
     public Group selectRandomTeam() {
         Random random = new Random();
         int index = random.nextInt(groups.length);

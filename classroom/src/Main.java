@@ -9,12 +9,12 @@ public class Main {
         Student s5 = new Student("钱七", 2023015805);
 
         //创建小组
-        Group t1 = new Group("Group 1", new Student[]{s1, s2});
-        Group t2 = new Group("Group 2", new Student[]{s3, s4});
-        Group t3 = new Group("Group 3", new Student[]{s5});
+        Group G1 = new Group("Group 1", new Student[]{s1, s2});
+        Group G2 = new Group("Group 2", new Student[]{s3, s4});
+        Group G3 = new Group("Group 3", new Student[]{s5});
 
         //创建班级
-        Classes c1 = new Classes("Class 1", new Group[]{t1, t2, t3}, new Student[]{s1, s2, s3, s4, s5});
+        Classes c1 = new Classes("Class 1", new Group[]{G1, G2, G3}, new Student[]{s1, s2, s3, s4, s5});
 
 
         Group randomGroup = c1.selectRandomTeam();
@@ -27,6 +27,7 @@ public class Main {
 
         Student randomStudentFromAll = c1.selectRandomStudentFromAll();
         System.out.println("Randomly selected student from class: " + randomStudentFromAll);
+
     }
 
 }
