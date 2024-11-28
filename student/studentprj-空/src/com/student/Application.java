@@ -11,7 +11,7 @@ public class Application {
         if (!baseDir.exists()) {
             if (!baseDir.mkdirs()) {
                 System.err.println("无法创建基础目录：" + Constant.FILE_PATH);
-            }
+            }//aa
         }
         
         // 启动主窗口
